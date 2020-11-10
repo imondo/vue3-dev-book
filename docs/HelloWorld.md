@@ -9,11 +9,11 @@ yarn
 yarn dev
 ```
 打开 [http://localhost:3000/](http://localhost:3000/) 可以看到 Hello World
-![image.png](/images/docs/cli.png)
+![image.png](./images/docs/cli.png)
 可以看到最新的目录结构其实和以前没有差别
 
 
-![image.png](/images/docs/menu.png)
+![image.png](./images/docs/menu.png)
 
 
 不过我们可以看看入口文件 `main.js`
