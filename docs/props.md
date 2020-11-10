@@ -68,7 +68,7 @@ Vue 3.0 中由于 _reactive refs_ 和 _template refs_ 的概念已经是统�
   }
 </script>
 ```
-我们也可以通过子组件上的 ref 信息来访问到父组件上的实例信息；**_当然我们也推荐这样直接访问_**
+我们也可以通过子组件上的 ref 信息来访问到父组件上的实例信息；**_当然我们也不推荐这样直接访问_**
 ```javascript
 <script>
   import { ref } from 'vue'

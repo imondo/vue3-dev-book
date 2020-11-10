@@ -7,7 +7,7 @@
 `setup` 函数是组件的入口，每个 `vue` 文件必须传入的一个函数，它初始时间在 `beforeCreate` 之前。
 
 
-- **模板中使用：**它返回一个对象
+* **模板中使用：** 它返回一个对象
 ```javascript
 import { ref } from 'vue'
 export default {
@@ -21,7 +21,7 @@ export default {
 }
 ```
 
-- **渲染函数 / JSX 中使用：**返回一个函数
+* **渲染函数 / JSX 中使用：** 返回一个函数
 ```javascript
 import { ref, h } from 'vue'
 export default {
