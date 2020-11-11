@@ -4,10 +4,12 @@
 
 
 ## setup
+
 `setup` 函数是组件的入口，每个 `vue` 文件必须传入的一个函数，它初始时间在 `beforeCreate` 之前。
 
 
-* **模板中使用：** 它返回一个对象
+**模板中使用：** 它返回一个对象
+
 ```javascript
 import { ref } from 'vue'
 export default {
@@ -21,7 +23,8 @@ export default {
 }
 ```
 
-* **渲染函数 / JSX 中使用：** 返回一个函数
+**渲染函数 / JSX 中使用：** 返回一个函数
+
 ```javascript
 import { ref, h } from 'vue'
 export default {
@@ -32,10 +35,15 @@ export default {
   }
 }
 ```
+
 ## reactive 和 ref
+
 这两个函数构成 vue 3.0 最重要的响应式代理。
+
 ### reactive
-接受一个对象返回一个响应式代理，等同于 vue 2.x 中 `Vue.observable()`
+
+接受一个对象返回一个响应式代理，等同于 vue 2.x 中 `Vue.observable()`。
+
 ```javascript
 <template>
   <div>
@@ -59,9 +67,13 @@ export default {
   }
 }
 ```
+
 注意：state 不能解构返回，不然会使其失去响应式
+
 ### ref
+
 接受一个参数值返回一个可改变的响应式对象，且对象拥有唯一的属性 `value` 可改变。
+
 ```javascript
 <template>
   <div>
@@ -87,7 +99,9 @@ export default {
 
 
 ## toRefs 和 toRef
-**toRefs **把一个响应对象转变为普通对象，该普通对象的每个 property 都是一个 ref ，和响应式对象 property 一一对应
+
+**toRefs**把一个响应对象转变为普通对象，该普通对象的每个 property 都是一个 ref ，和响应式对象 property 一一对应
+
 ```javascript
 const state = reactive({
   count: 1
@@ -95,7 +109,8 @@ const state = reactive({
 const { count } = toRefs(state)
 console.log(count.value) // 1
 ```
-**toRef **用来为一个 reactive 对象的属性创建一个 ref。这个 ref 可以被传递并且能够保持响应性
+**toRef** 用来为一个 reactive 对象的属性创建一个 ref。这个 ref 可以被传递并且能够保持响应性
+
 ```javascript
 const state = reactive({
   count: 1
@@ -103,8 +118,11 @@ const state = reactive({
 const countRef = toRef(state, 'count')
 console.log(countRef.value) // 1
 ```
+
 ## computed
+
 计算属性基本和 vue 2.x 中计算属性相同，传入一个 `getter` 函数，返回一个不可手动修改的 `ref` 对象
+
 ```javascript
 <script>
 import { ref, computed } from 'vue'
@@ -127,7 +145,9 @@ export default {
 </script>
 
 ```
+
 如果需要手动修改可以传入一个 `get` 和 `set` 函数的对象
+
 ```javascript
 setup() {
     const count = ref(1);
@@ -145,8 +165,11 @@ setup() {
 		console.log(count.value) // 0
   }
 ```
+
 ## watchEffect
+
 立即执行传入的函数，并响应式追踪依赖，并在依赖变化时，再次执行该函数
+
 ```javascript
 const count = ref(0)
 
@@ -157,7 +180,9 @@ setTimeout(() => {
   // 1
 }, 1000)
 ```
+
 也可以调用返回值，来停止追踪
+
 ```javascript
 const count = ref(0)
 

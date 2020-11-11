@@ -1,6 +1,6 @@
 {
   "name": "vue3docs",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "description": "Vue 3.0 构建项目及开发知识小册。",
   "main": "index.js",
   "directories": {
@@ -14,7 +14,8 @@
     "server": "static-html-server -p 5000"
   },
   "keywords": [
-    "book",
+    "vue",
+    "vue3",
     "markdown"
   ],
   "license": "MIT"
