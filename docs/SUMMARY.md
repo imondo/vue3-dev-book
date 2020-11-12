@@ -5,5 +5,5 @@
 * [组件 Component](component.md)
 * [组件的生命周期](lifecycle.md)
 * [组件间的通信](props.md)
-* [应用状态管理](state.md)
+* [Vuex 应用状态管理](vuex.md)
 * [实战：TodoList](todo.md)
