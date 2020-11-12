@@ -99,7 +99,7 @@ function useTaskList() {
 
 
 来看看项目效果：
-![过度6.gif](https://cdn.nlark.com/yuque/0/2020/gif/124135/1605167516801-84007567-a501-4068-930e-42442fbf92d6.gif#align=left&display=inline&height=371&margin=%5Bobject%20Object%5D&name=%E8%BF%87%E5%BA%A66.gif&originHeight=371&originWidth=644&size=229801&status=done&style=none&width=644)
+![过度6.gif](./images/todo1.gif)
 ## 逻辑复用
 我们接下来使用 `vuex` 来存储所有的任务列表数据，新建 `store.js` 文件
 ```javascript
@@ -155,4 +155,4 @@ export default defineComponent({
 })
 ```
 实现效果如下
-![过度1.gif](https://cdn.nlark.com/yuque/0/2020/gif/124135/1605169973917-67b8d3ae-ec8a-471a-a60e-53a3a41428f7.gif#align=left&display=inline&height=371&margin=%5Bobject%20Object%5D&name=%E8%BF%87%E5%BA%A61.gif&originHeight=371&originWidth=644&size=127076&status=done&style=none&width=644)
+![过度1.gif](./images/todo2.gif)
