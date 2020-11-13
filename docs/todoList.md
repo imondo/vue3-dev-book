@@ -99,7 +99,7 @@ function useTaskList() {
 
 
 来看看项目效果：
-![过度6.gif](./images/todo1.gif)
+![todo.gif](./images/todo1.gif)
 ## 逻辑复用
 我们接下来使用 `vuex` 来存储所有的任务列表数据，新建 `store.js` 文件
 ```javascript
@@ -141,18 +141,22 @@ export function useTaskList() {
 ```
 再在已完成组件和未完成组件引入，这样我们就可以在任意组件中可以获取到任务列表数据
 ```javascript
-import { defineComponent } from 'vue';
+import { computed, defineComponent } from 'vue';
+import { useStore } from 'vuex';
 import { useTaskList } from '../use-hook';
 
 export default defineComponent({
+  name: 'Completed',
   setup() {
-    const { list } = useTaskList()
-    const tasks = list.value.filter(v => v.completed); // 已完成列表
+    const { state: { list } } = useStore()
+    const tasks = computed(() => list.filter(v => v.completed)) // 已完成任务
+    const { delTask } = useTaskList()
     return {
-      tasks
+      tasks,
+      delTask
     }
   }
 })
 ```
 实现效果如下
-![过度1.gif](./images/todo2.gif)
+![todo.gif](./images/todo.gif)
