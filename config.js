@@ -3,10 +3,10 @@ var CONFIG = {
   title: 'Vue 3.0 开发小册',
   
   // 网页 keywords
-  keywords: 'Vue, Vue3, ref, reactive',
+  keywords: 'Vue, Vue3, vue3, vue3 项目，vue3开发, vue3 知识， ref, reactive',
 
   // 网页 description
-  description: 'Vue 3.0 构建项目及开发知识小册',
+  description: 'Vue 3.0，Vue3，vue3，vue3 项目，vue3开发，Vue 3.0 构建项目及开发知识小册',
 
   // 链接是否打开新的窗口
   openNewWindow: true,
