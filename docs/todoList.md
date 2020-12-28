@@ -99,7 +99,7 @@ function useTaskList() {
 
 
 来看看项目效果：
-![todo.gif](./images/todo1.gif)
+![todo.gif](../images/todo1.gif)
 ## 逻辑复用
 我们接下来使用 `vuex` 来存储所有的任务列表数据，新建 `store.js` 文件
 ```javascript
@@ -159,4 +159,4 @@ export default defineComponent({
 })
 ```
 实现效果如下
-![todo.gif](./images/todo.gif)
+![todo.gif](../images/todo.gif)

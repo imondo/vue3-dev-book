@@ -1,6 +1,6 @@
 # 前言
 
-![vue3.0.png](./images/vue.png)
+![vue3.0.png](../images/vue.png)
 
 Vue 3.0 从去年的组合式 API 征求意见一直至今9月来发布正式版本，让前端人不的不感叹：**学不动了 ！**
 

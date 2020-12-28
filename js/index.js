@@ -70,6 +70,10 @@ $(function () {
         document.title = $("h1", _content).text() + " - " + CONFIG.title;
       }
 
+      $('img', _content).map(function() {
+        $(this).attr('src', $(this).attr('src').substr(1))
+      })
+
       $('h1, h2, h3, h4', _content).map(function () {
         var anthor = $('<a class="anthor">#</a>');
         var title = $(this);
