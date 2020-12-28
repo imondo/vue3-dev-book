@@ -91,3 +91,5 @@ export const useLogin = () => {
 实现效果如下：
 
 ![teleport.gif](../images/teleport.gif)
+
+本文[代码地址](https://github.com/one-pupil/study/blob/master/vite-vue/src/components/TeleportTest.vue)
